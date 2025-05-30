@@ -4,24 +4,24 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Dodcars LBG",
-	description:
-		"Achieving Sustainable Development Goal 9 and Facilitating Community Transformation",
+  title: "Dodcars LBG",
+  description:
+    "Achieving Sustainable Development Goal 9 and Facilitating Community Transformation",
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body
-				className={`${inter.className} antialiased selection:bg-[#228b22] selection:text-white`}
-			>
-				<Header />
-				{children}
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={`${inter.className} antialiased selection:bg-[#228b22] selection:text-white`}
+      >
+        <Header />
+        {children}
+      </body>
+    </html>
+  );
 }
