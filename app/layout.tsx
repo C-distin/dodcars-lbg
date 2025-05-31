@@ -1,5 +1,6 @@
 import { inter } from "@/components/layout/font";
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
