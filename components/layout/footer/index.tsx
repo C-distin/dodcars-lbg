@@ -19,14 +19,17 @@ export function Footer() {
     {
       icon: Facebook,
       link: "",
+      text: "Facebook",
     },
     {
       icon: Twitter,
       link: "",
+      text: "Twitter",
     },
     {
       icon: Instagram,
       link: "",
+      text: "Instagram",
     },
   ];
 
@@ -76,6 +79,45 @@ export function Footer() {
                   Transformation
                 </p>
               </div>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="mb-6 space-y-6">
+                {ContactLinks.map((link) => (
+                  <Link
+                    key={link.text}
+                    href={link.link}
+                    className="flex space-x-4 text-gray-300 hover:text-[#228b22] transition-colors duration-300 group"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <link.icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                    <span>{link.text}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="lg:col-span-2">
+              <div className="mb-6 flex items-center space-x-4">
+                {SocialLinks.map((link) => (
+                  <Link
+                    key={link.text}
+                    href={link.link}
+                    className="text-gray-300 hover:text-[#228b22] transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <link.icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="border-t border-gray-700/20 pt-8">
+          <div className="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">
+            <div className="container flex items-center justify-between mb-6">
+              &copy; {new Date().getFullYear()} DodCars LBG. All rights
+              reserved.
             </div>
           </div>
         </div>
