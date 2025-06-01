@@ -39,6 +39,22 @@ export function DonationForm() {
           )}
         </div>
       </div>
+      <input
+        {...register("email", { required: true })}
+        type="email"
+        placeholder="Email"
+        className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#228b22] focus:border-[#228b22] transition-colors"
+      />
+      {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+      <input
+        {...register("phoneNumber")}
+        type="tel"
+        placeholder="Phone Number"
+        className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#228b22] focus:border-[#228b22] transition-colors"
+      />
+      {errors.phoneNumber && (
+        <p className="text-red-500">{errors.phoneNumber.message}</p>
+      )}
     </form>
   );
 }
