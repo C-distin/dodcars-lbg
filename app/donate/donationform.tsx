@@ -2,7 +2,7 @@
 
 import { DonationSchema, type DonationData } from "./schema";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { standardSchemaResolver } from "@hookform/resolvers/standard-schema";
 
 export function DonationForm() {
   const {
@@ -10,7 +10,7 @@ export function DonationForm() {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<DonationData>({
-    resolver: zodResolver(DonationSchema),
+    resolver: standardSchemaResolver(DonationSchema),
   });
 
   return (
