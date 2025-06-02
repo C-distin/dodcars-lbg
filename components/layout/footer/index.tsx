@@ -64,10 +64,10 @@ export function Footer() {
               <div className="mb-6">
                 <div className="flex items-center">
                   <Image
-                    src="/images/logo.jpg"
+                    src="/images/logo.png"
                     alt="DodCars Logo"
-                    width={80}
-                    height={80}
+                    width={40}
+                    height={40}
                   />
                   <h2 className="text-2xl font-bold mb-4">
                     <span className="text-[#228b22]">DodCars</span> LBG

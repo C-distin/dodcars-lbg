@@ -54,7 +54,7 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-screen-2xl mx-auto px-4 md:px-6 lg:px-8 py-4 md:py-6">
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -67,8 +67,8 @@ export function Header() {
               <Image
                 src="/images/logo.png"
                 alt="DodCars Logo"
-                width={80}
-                height={80}
+                width={40}
+                height={40}
               />
               <span className="text-[#228b22] text-2xl font-bold">
                 DodCars LBG
