@@ -15,7 +15,7 @@ export function DonationForm() {
 
   return (
     <form className="rounded-xl bg-white shadow-sm boder p-6 space-y-6">
-      <h2 className="text-2xl font-bold">Donation Form</h2>
+      {/* <h2 className="text-2xl font-bold">Donation Form</h2> */}
       <div className="flex flex-col space-y-4 text-[#228b22]">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div>
