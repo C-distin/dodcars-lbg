@@ -129,9 +129,9 @@ const teamMembers: TeamMember[] = [
   }
 ];
 
-export function About() {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-green-50">
       <div className="container mx-auto px-4 py-16 space-y-24">
         {/* Hero Section */}
         <motion.section 
@@ -145,7 +145,7 @@ export function About() {
               International Development Organization
             </Badge>
             <h1 className="text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
-              About <span className="text-blue-600">DODCARS</span>
+              About <span style={{ color: "#228b22" }}>DODCARS</span>
             </h1>
           </motion.div>
           
@@ -174,7 +174,7 @@ export function About() {
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold text-slate-800 flex items-center gap-2">
-                      <Globe className="h-5 w-5 text-blue-600" />
+                      <Globe className="h-5 w-5" style={{ color: "#228b22" }} />
                       Global Presence
                     </h3>
                     <p className="text-slate-600 leading-relaxed">
@@ -184,7 +184,7 @@ export function About() {
                   </div>
                   <div className="space-y-4">
                     <h3 className="text-xl font-semibold text-slate-800 flex items-center gap-2">
-                      <Heart className="h-5 w-5 text-blue-600" />
+                      <Heart className="h-5 w-5" style={{ color: "#228b22" }} />
                       Human Rights Focus
                     </h3>
                     <p className="text-slate-600 leading-relaxed">
@@ -221,8 +221,8 @@ export function About() {
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                      <div className="text-blue-600">
+                    <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: "rgba(34, 139, 34, 0.1)" }}>
+                      <div style={{ color: "#228b22" }}>
                         {service.icon}
                       </div>
                     </div>
@@ -264,10 +264,10 @@ export function About() {
           >
             {sdgGoals.map((goal, index) => (
               <motion.div key={goal.number} variants={fadeInUp}>
-                <Card className="h-full bg-gradient-to-br from-blue-50 to-indigo-50 border-0 shadow-lg">
+                <Card className="h-full bg-gradient-to-br from-green-50 to-emerald-50 border-0 shadow-lg">
                   <CardHeader>
                     <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 text-white rounded-full flex items-center justify-center font-bold" style={{ backgroundColor: "#228b22" }}>
                         {goal.number}
                       </div>
                       <CardTitle className="text-lg font-semibold text-slate-900">
@@ -335,7 +335,7 @@ export function About() {
           variants={fadeInUp}
           className="text-center"
         >
-          <Card className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white border-0 shadow-2xl">
+          <Card className="text-white border-0 shadow-2xl" style={{ background: "linear-gradient(to right, #228b22, #32cd32)" }}>
             <CardContent className="py-16 px-8">
               <h2 className="text-3xl font-bold mb-6">
                 Driving Sustainable Change Worldwide
