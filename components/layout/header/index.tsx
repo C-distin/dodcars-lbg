@@ -65,7 +65,7 @@ export function Header() {
           >
             <Link href="/" className="flex items-center space-x-4">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="DodCars Logo"
                 width={80}
                 height={80}
