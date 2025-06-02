@@ -17,8 +17,8 @@ export function DonationForm() {
     <form className="rounded-xl bg-white shadow-sm boder p-6 space-y-6">
       {/* <h2 className="text-2xl font-bold">Donation Form</h2> */}
       <div className="flex flex-col space-y-4 text-[#228b22]">
-        <div className="grid grid-cols-1 md:grid-cols-2">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+          <div className="w-full">
             <input
               {...register("firstName", { required: true })}
               type="text"
@@ -29,7 +29,7 @@ export function DonationForm() {
               <p className="text-red-500">{errors.firstName.message}</p>
             )}
           </div>
-          <div>
+          <div className="w-full">
             <input
               {...register("lastName", { required: true })}
               type="text"
