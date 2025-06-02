@@ -537,10 +537,7 @@ export default function Home() {
               <motion.div key={item.title} variants={fadeInUp}>
                 <Card className="h-full bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
                   <CardHeader>
-                    <CardTitle
-                      className="text-lg font-semibold text-slate-900 group-hover:text-green-600 transition-colors"
-                      style={{ "--tw-text-opacity": 1 }}
-                    >
+                    <CardTitle className="text-lg font-semibold text-slate-900 group-hover:text-green-600 transition-colors">
                       {item.title}
                     </CardTitle>
                   </CardHeader>
